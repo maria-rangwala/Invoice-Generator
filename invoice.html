@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generate</title>
+    <link rel="stylesheet" href="invoice.css"/>
+</head>
+<body>
+    <h1>INVOICE GENERATOR</h1>
+<div class="invoice">
+    <header>
+        <form onsubmit="event.preventDefault();onformSubmit()">
+            <center><table id="company">
+                <tr>
+                <td colspan="3">
+        <div class="label">
+            <div class="head">
+                <div class="company">
+        <label>Company details:</label><br/>
+        <input type="text" id="name" placeholder="enter company here" required/><br/>
+        <textarea placeholder="enter company address here" id="address" required></textarea><br/>
+        <input type="number" id="mobile" placeholder="enter company contact here" required/><br/>
+        <input type="email" id="email" placeholder="enter company email here" required/><br/>
+    </div>
+</td>
+<td>
+    <div class="head1">
+        <div >
+        <label>Invoice No.</label>
+        
+        <input type="number" id="invoive-num" placeholder="enter invoice no." required/>
+        <label>Customer ID</label><br/>
+        
+        <input type="text" id="custom-id" placeholder="enter Customer ID" required/><br/>
+        </div>
+        <div>
+        <label>Issue date</label>
+        
+       
+        <input type="date" id="issue"  required/>
+        <label>Due date</label><br/>
+        <input type="date" id="due"  required/><br/>
+        </div>
+    </td>
+    </div>
+    </div>
+    </div>
+</td>
+</tr>
+<tr>
+    <div class="customer">
+        <td colspan="2">
+        <div class="bill-to">
+            <label>Bill to:</label>
+            <input type="text" id="name1" placeholder="enter customer name" required/><br/>
+        <textarea placeholder="enter address here" id=" address1"required></textarea><br/>
+        <input type="number" id="mobile1" placeholder="enter contact details here" required/><br/>
+        <input type="email" id="email1" placeholder="enter email here" required/><br/>
+        </div>
+    </td>
+    <td colspan="2">
+        <div class="ship-to">
+        <label>Ship to:</label>
+        <textarea placeholder="enter address here" id="address2" required></textarea><br/>
+        <input type="number" id="mobile2" placeholder="enter contact details here" required/><br/>
+        <input type="email" id="email2" placeholder="enter email here" required/><br/>
+        </div>
+        </div>
+    </div>
+</td>
+
+
+</tr>
+</table>
+</center>
+<hr/>
+<center>
+    <div class="bill">
+    <caption>INVOICE</caption>
+    <table border="2px" style="border-color: black;">
+            <th colspan="3">Description</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+            <th></th>
+        <tr>
+            <td colspan="3"><input type="text" style="margin: 0; border-color: black;"/></td>
+            <td><input type="number" style="margin: 0; border-color: black;"/></td>
+            <td><input type="number" style="margin: 0; border-color: black;"/></td>
+            <td><input type="number" style="margin: 0; border-color: black;"/></td>
+
+        </tr>
+        <tr >
+            <td colspan="3" rowspan="3">THANKYOU!!<BR/>HOPE TO SEE YOU AGAIN</td>
+            <td colspan="2">Amount</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">Discount</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            
+            <td colspan="2">Total</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td colspan="6"><input type="reset" value="reset" style="margin: 0; border-color: black;"/></td>
+        </tr>
+    </table>
+</div> 
+</center>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/>
+</form>
+    </header>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: lemonchiffon;
+    height: 70px;
+    width: 100vw;
+    display:flex;
+    color:#cd3a69;
+    padding: 20px;
+    top:0px;
+}
+a{
+color: #cd3a69;
+height: 40px;
+width: 70px;
+margin: 20px;
+margin-bottom: 20px;
+margin-left: 25px;
+font-size: larger;
+background-color:none;
+text-decoration: none;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+
+    top:45px;
+    position: absolute;
+    right: 40px;
+}
+img{
+    margin-right: 60px;
+    height: 90px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+    line-height: 1;
+
+}
+pre{
+    line-height: 1.5;
+}
+.content{
+    background-size:cover;
+    padding-left: 20px;
+    display:flex;
+}
+.contentimg{
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    margin-right: 0;
+}
+button{
+    font: 1em sans-serif;
+    font-weight: bolder;
+    background-color: lemonchiffon;
+    border-color: darkgrey;
+    border-radius: 5%;
+}
+.template{
+    background-color: lemonchiffon;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 300px;
+    width: 100vw;
+    padding:55px;
+    left:50px;
+}
+.temp1{
+    height: 275px;
+    width: 275px;
+    border-color: #cd3a69;
+    background-image: url("invoice1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:1px;
+    align-self: center;
+}
+.temp2{
+    height: 275px;
+    width: 275px;
+    border-color: #cd3a69;
+    background-image: url("invoice2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+}
+.temp3{
+    height: 275px;
+    width: 275px;
+    border-color: #cd3a69;
+    background-image: url("invoice3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+}
